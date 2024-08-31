@@ -32,23 +32,6 @@ h5 {
     font-family: var(--heading-font);
 }
 
-.responsive-all{
-    /* `lg` applies to medium devices (tablets, less than 992px) */
-    @media (max-width: 370px) {
-      width: 100%;
-     
-  }
-
-  @media (max-width: 576px) {
-    width: 100%;
-   
-}
-
-@media (max-width:px) {
-    width: 100%;
-   
-}
-}
 
 /* nevber & banner bg-img */
 
@@ -71,15 +54,21 @@ h5 {
 
             .nav-link {
                 color: black;
-                font-weight: 600; 
+                font-weight: 600;
                 margin: 10px;
-                padding:10px 20px;
+                padding: 10px 20px;
                 border-radius: 10px;
+                 /* `lg` applies to medium devices (tablets, less than 992px) */
+                 @media (max-width: 576px) {
+                    margin: 5px;
+                    padding: 5px 10px;
+                
+                }
 
-                &:hover{
+                &:hover {
                     background-color: #E7272D;
-                    color:#FFF;
-                 
+                    color: #FFF;
+
 
                 }
             }
@@ -109,8 +98,8 @@ h5 {
             background-color: rgba(0, 0, 0, 0.3);
             margin: 0 30px;
 
-             /* `lg` applies to medium devices (tablets, less than 992px) */
-             @media (max-width: 991.98px) {
+            /* `lg` applies to medium devices (tablets, less than 992px) */
+            @media (max-width: 991.98px) {
 
                 display: none;
             }
@@ -118,29 +107,23 @@ h5 {
 
         .second-icon {
             transform: rotate(180deg);
-             /* `lg` applies to medium devices (tablets, less than 992px) */
-                    @media (max-width: 991.98px) {
+            cursor: pointer;
+            &:hover{
+                background-color: transparent;
 
-                       
+            }
+            /* `lg` applies to medium devices (tablets, less than 992px) */
+            @media (max-width: 991.98px) {}
 
-                    }
-
-                    .second-icon:hover{
-                        .one,
-                        .two,
-                        .three{
-                            background-color: #E7272D;
-                        }
-
-                    }
+            
 
 
             .one {
                 width: 40px;
                 height: 2px;
                 margin-bottom: 10px;
-               
-               
+
+
             }
 
 
@@ -165,10 +148,15 @@ h5 {
             .heading-text {
                 font-size: 100px;
                 color: #FFF;
+                 /* `lg` applies to medium devices (tablets, less than 992px) */
+               @media (max-width: 576px) {
+                font-size: 70px;
+                
+              }
             }
 
             .heading-p {
-                position: relative;
+
                 left: 5%;
                 width: 200px;
                 margin: 0 auto;
@@ -187,6 +175,11 @@ h5 {
                 color: #FFF;
                 padding-bottom: 170px;
                 padding-top: 40px;
+                 /* `lg` applies to medium devices (tablets, less than 992px) */
+                  @media (max-width: 576px) {
+                    width: 330px;
+              
+              }
 
 
                 .border-p {
@@ -196,7 +189,11 @@ h5 {
                     margin: 15px 0 0 30px;
                     background-color: red;
                     transition: all ease 1s;
-
+                    /* `lg` applies to medium devices (tablets, less than 992px) */
+                  @media (max-width: 576px) {
+                    width: 130px;
+              
+                    }
                     &:hover {
                         background-color: #0d00ff;
                     }
@@ -232,50 +229,51 @@ h5 {
 
         text-align: center;
         margin-bottom: 50px;
-     }
+    }
 
 }
 
-    .best-food {
+.best-food {
 
-        .best-food-img {
-            margin-top: 60px;
-
-        }
-
-        .bast-contendt {
-            margin: 20px 0px 14px 30px;
-            color: #666666;
-            font: 15px;
-        }
-
-        .best-sell-time {
-            background-image: url(../image/bg.png);
-            background-repeat: no-repeat;
-            background-position: left;
-
-            background-color: #1B1B1B;
-            color: #FFF;
-            padding: 20px;
-            margin-left: 20px;
-             /* `lg` applies to medium devices (tablets, less than 992px) */
-             @media (max-width: 991.98px) {
-                    margin-top: 50px;
-            }
-        }
-
-        .text-button {
-
-            font-size: 20px;
-            background-color: #E7272D;
-            color: #FFF;
-            margin-left: 60px;
-            padding: 5px 10px;
-            
-
-        }
+    .best-food-img {
+        margin-top: 60px;
 
     }
+
+    .bast-contendt {
+        margin: 20px 0px 14px 30px;
+        color: #666666;
+        font: 15px;
+    }
+
+    .best-sell-time {
+        background-image: url(../image/bg.png);
+        background-repeat: no-repeat;
+        background-position: left;
+
+        background-color: #1B1B1B;
+        color: #FFF;
+        padding: 20px;
+        margin-left: 20px;
+
+        /* `lg` applies to medium devices (tablets, less than 992px) */
+        @media (max-width: 991.98px) {
+            margin-top: 50px;
+        }
+    }
+
+    .text-button {
+
+        font-size: 20px;
+        background-color: #E7272D;
+        color: #FFF;
+        margin-left: 60px;
+        padding: 5px 10px;
+
+
+    }
+
+}
 
 
 
@@ -293,12 +291,12 @@ h5 {
     margin-top: 50px;
     margin-bottom: 20px;
 
-     /* `lg` applies to medium devices (tablets, less than 992px) */
-     @media (max-width: 991.98px) {
+    /* `lg` applies to medium devices (tablets, less than 992px) */
+    @media (max-width: 991.98px) {
         width: 90%;
         margin-bottom: 30px;
-        
-     }
+
+    }
 
     ul {
         margin: 0 auto;
@@ -323,17 +321,7 @@ h5 {
         }
     }
 
-    /* 
-    @media (min-width: 992px) {
-        .container-fluid {
-            li {
-                margin: 20px 20px;
-                padding: 0px;
-                font-size: 16px;
-                border-radius: 10px;
-            }
-        }
-    } */
+   
 }
 
 /* product start  */
@@ -420,8 +408,8 @@ h5 {
         color: #fff;
         margin-top: 50px;
 
-         /* `lg` applies to medium devices (tablets, less than 992px) */
-         @media (max-width: 991.98px) {
+        /* `lg` applies to medium devices (tablets, less than 992px) */
+        @media (max-width: 991.98px) {
             width: 300px;
             font-size: 30px;
             line-height: 45px;
@@ -469,8 +457,8 @@ h5 {
             transition: transform 1s ease, filter 1s ease;
 
             &:hover {
-                transform: scale(1);
-                filter: brightness(0.70);
+                transform:skew(1.1);
+                filter: brightness(0.60);
 
                 .food-img {
                     width: 100%;
@@ -488,12 +476,43 @@ h5 {
                     color: rgb(255, 255, 255);
                 }
 
-
-                .border-red,
-                .border-red1 {
+                .border-red1{
                     background-color: #ff0000;
+                    animation-name: border-animetion1;
+                    animation-duration: 1s;
+                    animation-timing-function: ease;
+                    @keyframes border-animetion1{
+                        from{
+                            bottom: 0;
+                            left:0 ;
+                        }
+                        to{
+                            top:100px;
+                            left: 0;
+                        }
+                    }
                 }
 
+                .border-red{
+                    background-color: #ff0000;
+                    animation-name: border-animetion;
+                    animation-duration: 1s;
+                    animation-timing-function: ease;
+                    @keyframes border-animetion{
+                        from{
+                           left: 0;
+                           bottom: 0;
+                        }
+                        to{
+                            right:200px;
+                            bottom: 0px;
+                        }
+                    }
+                }
+                
+
+              
+               
             }
 
 
@@ -509,7 +528,7 @@ h5 {
                 position: absolute;
                 left: 33px;
                 bottom: 56px;
-                width: 250px;
+                width: 200px;
                 height: 2px;
                 background-color: transparent;
             }
@@ -554,10 +573,13 @@ h5 {
             display: inline-block;
         }
 
-        .footer-border2 {
+        /* .footer-border2 {
             margin-top: 30px;
 
-        }
+        } */
+    }
+    .img-footer{
+        margin-top:20px ;
     }
 
     .about-h5 {
@@ -574,9 +596,8 @@ h5 {
         background-color: #3F3F3F;
         width: 30px;
         height: 30px;
-        text-align: center;
-        padding-top: 7px;
-
+        padding: 8px;
+       
         &:hover {
             background-color: #981313;
         }
@@ -587,8 +608,7 @@ h5 {
         background-color: #3F3F3F;
         width: 30px;
         height: 30px;
-        text-align: center;
-        padding-top: 7px;
+        padding: 7px;
 
         &:hover {
             background-color: #981313;
@@ -600,8 +620,7 @@ h5 {
         background-color: #3F3F3F;
         width: 30px;
         height: 30px;
-        text-align: center;
-        padding-top: 7px;
+        padding:7px;
 
         &:hover {
             background-color: #981313;
@@ -613,18 +632,16 @@ h5 {
         background-color: #3F3F3F;
         width: 30px;
         height: 30px;
-        text-align: center;
-        padding-top: 7px;
+        padding:7px;
 
         &:hover {
-            background-color: #981313; 
+            background-color: #981313;
         }
     }
 
     .form-bg {
         background-color: transparent;
         border: 1px solid;
-        border-radius: 10px;
         color: #ffff;
 
 
@@ -642,7 +659,6 @@ h5 {
 
     .footer-end {
         background-color: #262525;
-        padding: 10px 10px;
         color: #FFFFff;
     }
 
