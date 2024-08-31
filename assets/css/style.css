@@ -215,9 +215,19 @@ h5 {
     margin-top: 60px;
 
     .commone-style {
-        font-size: 36px;
+        font-size: 40px;
         line-height: 68px;
         margin-left: 40px;
+
+        /* `lg` applies to medium devices (tablets, less than 992px) */
+        @media (max-width: 576px) {
+           
+                font-size: 38px;
+                line-height: 50px;
+                margin: 0 auto;
+            
+      
+      }
     }
 
 }
@@ -244,13 +254,19 @@ h5 {
         margin: 20px 0px 14px 30px;
         color: #666666;
         font: 15px;
+        /* `lg` applies to medium devices (tablets, less than 992px) */
+        @media (max-width: 576px) {
+            margin: 20px 0px 30px 0px;
+      
+      }
+
     }
 
     .best-sell-time {
         background-image: url(../image/bg.png);
         background-repeat: no-repeat;
         background-position: left;
-
+              
         background-color: #1B1B1B;
         color: #FFF;
         padding: 20px;
@@ -269,6 +285,12 @@ h5 {
         color: #FFF;
         margin-left: 60px;
         padding: 5px 10px;
+        /* `lg` applies to medium devices (tablets, less than 992px) */
+        @media (max-width: 576px) {
+            margin: 0 auto;
+            padding: 10px 18px;
+      
+      }
 
 
     }
@@ -457,8 +479,9 @@ h5 {
             transition: transform 1s ease, filter 1s ease;
 
             &:hover {
-                transform:skew(1.1);
+                transform:matrix(1.1);
                 filter: brightness(0.60);
+                transition: all ease 0.09s;
 
                 .food-img {
                     width: 100%;
@@ -481,16 +504,7 @@ h5 {
                     animation-name: border-animetion1;
                     animation-duration: 1s;
                     animation-timing-function: ease;
-                    @keyframes border-animetion1{
-                        from{
-                            bottom: 0;
-                            left:0 ;
-                        }
-                        to{
-                            top:100px;
-                            left: 0;
-                        }
-                    }
+                   
                 }
 
                 .border-red{
@@ -498,16 +512,7 @@ h5 {
                     animation-name: border-animetion;
                     animation-duration: 1s;
                     animation-timing-function: ease;
-                    @keyframes border-animetion{
-                        from{
-                           left: 0;
-                           bottom: 0;
-                        }
-                        to{
-                            right:200px;
-                            bottom: 0px;
-                        }
-                    }
+                   
                 }
                 
 
@@ -596,7 +601,7 @@ h5 {
         background-color: #3F3F3F;
         width: 30px;
         height: 30px;
-        padding: 8px;
+        padding: 7px;
        
         &:hover {
             background-color: #981313;
@@ -621,6 +626,7 @@ h5 {
         width: 30px;
         height: 30px;
         padding:7px;
+        margin-top: 10px;
 
         &:hover {
             background-color: #981313;
