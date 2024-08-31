@@ -32,6 +32,24 @@ h5 {
     font-family: var(--heading-font);
 }
 
+.responsive-all{
+    /* `lg` applies to medium devices (tablets, less than 992px) */
+    @media (max-width: 370px) {
+      width: 100%;
+     
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+   
+}
+
+@media (max-width:px) {
+    width: 100%;
+   
+}
+}
+
 /* nevber & banner bg-img */
 
 .maine {
@@ -55,6 +73,15 @@ h5 {
                 color: black;
                 font-weight: 600; 
                 margin: 10px;
+                padding:10px 20px;
+                border-radius: 10px;
+
+                &:hover{
+                    background-color: #E7272D;
+                    color:#FFF;
+                 
+
+                }
             }
 
         }
@@ -94,14 +121,26 @@ h5 {
              /* `lg` applies to medium devices (tablets, less than 992px) */
                     @media (max-width: 991.98px) {
 
-                        display: none;
+                       
+
                     }
+
+                    .second-icon:hover{
+                        .one,
+                        .two,
+                        .three{
+                            background-color: #E7272D;
+                        }
+
+                    }
+
 
             .one {
                 width: 40px;
                 height: 2px;
                 margin-bottom: 10px;
-
+               
+               
             }
 
 
@@ -150,7 +189,7 @@ h5 {
                 padding-top: 40px;
 
 
-                .dorder-p {
+                .border-p {
 
                     width: 160px;
                     height: 2px;
@@ -381,6 +420,12 @@ h5 {
         color: #fff;
         margin-top: 50px;
 
+         /* `lg` applies to medium devices (tablets, less than 992px) */
+         @media (max-width: 991.98px) {
+            width: 300px;
+            font-size: 30px;
+            line-height: 45px;
+        }
 
     }
 
@@ -572,7 +617,7 @@ h5 {
         padding-top: 7px;
 
         &:hover {
-            background-color: #981313;
+            background-color: #981313; 
         }
     }
 
