@@ -156,18 +156,19 @@ h5 {
                 
               }
             }
-
             .heading-p {
-
                 left: 5%;
                 width: 200px;
                 margin: 0 auto;
                 font-size: 30px;
-                background-color: #E7272D;
-                padding: 0 30px;
+                background-color: #da4045;
+                padding: 0 33px;
                 color: #FFF;
-
-
+                transition: all ease 1s;
+                &:hover{
+                    background-color: rgb(255, 0, 0);
+                    border-radius: 10px;
+                }
             }
 
             .small-border {
@@ -177,6 +178,7 @@ h5 {
                 color: #FFF;
                 padding-bottom: 170px;
                 padding-top: 40px;
+                
                  /* `lg` applies to medium devices (tablets, less than 992px) */
                   @media (max-width: 576px) {
                     width: 330px;
@@ -188,12 +190,14 @@ h5 {
 
                     width: 160px;
                     height: 2px;
-                    margin: 15px 0 0 30px;
+                    margin: 15px 0 0 36px;
                     background-color: red;
                     transition: all ease 1s;
                     /* `lg` applies to medium devices (tablets, less than 992px) */
                   @media (max-width: 576px) {
-                    width: 130px;
+                    width: 100px;
+                    margin-left: 10px;
+
               
                     }
                     &:hover {
@@ -484,12 +488,12 @@ h5 {
 
         .Food-Gallery {
             position: relative;
-            transition: transform 1s ease, filter 1s ease;
+            /* transition: transform 1s ease, filter 1s ease; */
 
             &:hover {
                 transform:matrix(1.1);
                 filter: brightness(0.60);
-                transition: all ease 0.09s;
+                
 
                 .food-img {
                     width: 100%;
@@ -501,6 +505,7 @@ h5 {
                     width: 100%;
                     height: 532px;
                     object-fit: cover;
+                   
                 }
 
                 .food-text {
@@ -510,16 +515,15 @@ h5 {
                 .border-red1{
                     background-color: #ff0000;
                     animation-name: border-animetion1;
-                    animation-duration: 1s;
-                    animation-timing-function: ease;
+                  
+                    
                    
                 }
 
                 .border-red{
                     background-color: #ff0000;
                     animation-name: border-animetion;
-                    animation-duration: 1s;
-                    animation-timing-function: ease;
+                   
                    
                 }
                 
